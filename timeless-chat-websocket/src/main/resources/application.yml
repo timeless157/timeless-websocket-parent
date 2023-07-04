@@ -1,22 +1,22 @@
 server:
-  port: 8888
+  port: 8082
 spring:
   application:
     name: timeless-chat-websocket
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/timeless_chat_websocket?serverTimeZone=UTC
-    username: root
-    password: root
+    url: jdbc:mysql://你的虚拟机ip:3306/timeless_chat_websocket?serverTimeZone=UTC
+    username: 你的mysql用户名（root）
+    password: 你的mysql密码
   mvc:
     pathmatch:
       matching-strategy: ANT_PATH_MATCHER # Springboot2.6以后将SpringMVC 默认路径匹配策略从AntPathMatcher 更改为PathPatternParser
-  rabbitmq:
-    host: ${rabbitmq.host}
-    port: ${rabbitmq.port}
-    username: ${rabbitmq.username}
-    password: ${rabbitmq.password}
-    virtual-host: ${rabbitmq.virtual-host}
+#  rabbitmq:
+#    host: ${rabbitmq.host}
+#    port: ${rabbitmq.port}
+#    username: ${rabbitmq.username}
+#    password: ${rabbitmq.password}
+#    virtual-host: ${rabbitmq.virtual-host}
 #pinda:
 #  swagger:
 #    enabled: true

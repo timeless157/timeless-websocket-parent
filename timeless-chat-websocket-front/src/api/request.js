@@ -5,8 +5,8 @@ import { Notification, MessageBox, Message } from 'element-ui'
 
 
 const requests = axios.create({
-  baseURL: "/api",
-  timeout: 5000,
+  baseURL: "http://你的虚拟机ip:8082",
+  timeout: 50000,
 });
 
 

@@ -21,6 +21,12 @@ import java.util.Map;
 public class WebSocketService {
 
 
+    /**
+    * @Description: SimpMessagingTemplate 是Spring框架提供的一个用于发送消息到WebSocket目标的模板类，
+    *                   类似于redisTemplate , rabbitmqTemplate。
+    * @Date: 2023/6/27 23:51
+    * @Author: timeless
+    */
     @Autowired
     private SimpMessagingTemplate template;
 

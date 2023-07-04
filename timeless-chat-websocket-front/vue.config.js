@@ -5,12 +5,14 @@ module.exports = defineConfig({
   lintOnSave: false,
 
   devServer: {
-    proxy: {
-      '/api': {
-        target: 'http://127.0.0.1:8888',
-        pathRewrite: { '^/api': '' },
-      }
-    }
+    port: 8081,
+    // proxy: {
+    //   '/api': {
+    //     target: 'http://127.0.0.1:8082',
+    //     changeOrigin: true, //是否跨域
+    //     pathRewrite: { '^/api': '' },
+    //   }
+    // }
   }
 
 })

@@ -145,7 +145,7 @@ export default {
         this.$set(this.messageList, this.username + user.toUsername, []);
       }
 
-      // TODO 展示数据库中存在的信息，也就是聊天记录
+      // 展示数据库中存在的信息，也就是聊天记录
       listPrivateMessages(this.username, user.toUsername).then((response) => {
         this.$set(this.messageList, this.username + user.toUsername, response.data);
       });
@@ -201,7 +201,7 @@ export default {
       );
     },
     connect() {
-      const socket = new SockJS("/api/ws/timeless");
+      const socket = new SockJS("http://你的虚拟机ip:8082/ws/timeless");
       this.stompClient = Stomp.over(socket);
       this.stompClient.connect({}, (frame) => {
         console.log("Connected: " + frame);

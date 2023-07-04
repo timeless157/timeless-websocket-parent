@@ -18,7 +18,7 @@ public class Constants {
 
     // websocket
     public static final String ENDPOINT = "/ws/timeless";
-    public static final String ALLOWED_ORIGINS = "http://localhost:8080";
+    public static final String ALLOWED_ORIGINS = "*";
     public static final String SIMPLE_BROKER = "/topic";
     public static final String DESTINATION_PREFIXES = "/ClientToServer";
 
